@@ -1,24 +1,28 @@
-<nav class="nav-primary">
-    <ul>
+
+<nav>
+
+<div align="center">
+     <img src="css/me1.JPG" width="150" height="160" >
+
+<h1> Mihaela M. </h1>
+    hiflyin
+
+</div>
+    <br />
+    <br />
+    <ul style="line-height:180%">
 
     	<li>
-    		<a href="{{ site.baseurl }}/">
-    	    Home
-    	    </a>
+    		<a href="{{ site.baseurl }}/">About Me</a>
     	</li>
-        {% for p in site.pages %}
-        	{% if p.home %}
-        	{% else %}
         <li>
-        	<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-            <div class="img-wrapper">
-        		<img src="{{ p.image }}" />
-        	</div>
-            {{ p.title }}
-            </a>
+            Tech articles:
+            <ul style="line-height:180%">
+                <li><a href="vanilla_RNN.html">  RNN equations explained </a>
+                </li>
+            </ul>
         </li>
-        {% endif %}
-        {% endfor %}
+
     </ul>
 
 </nav>

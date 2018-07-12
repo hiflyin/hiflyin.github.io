@@ -1,13 +1,24 @@
 {% include head.html %}
 
-	<main>
 
-    	<h1>{{ page.title }}</h1>
 
-    	{{ content }}
+	<section>
 
-	</main>
 
-	{% include nav.html %}
+		{% include nav.html %}
+
+		<article>
+			<h1 align="Center" font-size="25px">{{ page.title }}</h1>
+			<br/><br/><br/><br/>
+			{{ content }}
+		</article>
+
+		<right_highlights></right_highlights>
+
+
+
+	</section>
+
+
 
 {% include foot.html %}
