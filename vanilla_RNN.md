@@ -1,5 +1,5 @@
 ---
-layout: machine_learning_post
+layout: post
 title: VanillaRNN
 ---
 going through vanilla RNN equations with python numpy

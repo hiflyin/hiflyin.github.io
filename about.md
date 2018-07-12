@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: post
 title: About
-permalink: /about/
 ---
 
 Website created to post articles useful for solving science and industry problems.

@@ -1,7 +1,5 @@
 ---
-layout: default
-title:  Home
+layout: home
+title: xx
 home: true
 ---
-
-Recent posts
