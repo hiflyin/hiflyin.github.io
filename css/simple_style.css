@@ -5,45 +5,64 @@ x-sizing: border-box;
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("blue_ai2.jpg");
+    font-family: "Georgia", serif;
 }
 
 /* Style the header */
 header {
-    background-image: url("red_ai.jpg");
-    padding: 5px;
+    background-image: url("green_tech.jpg");
+    padding: 15px;
     text-align: center;
     font-size: 15px;
     color: white;
+}
+
+div.content {
+    background-image: url("blue_ai3.jpg");
+    padding: 27px;
+
+}
+
+div.portrait {
+
+
+    padding: 35px;
+
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
     float: left;
     width: 20%;
-    padding: 20px;
-    color: blue;
-
-
+    padding: 17px;
+    color: #48D64B;
+    font-size:18px;
 }
 
-/* Style the list inside the menu */
 nav ul {
     list-style-type: none;
-    padding: 20;
-    height = 80%;
+}
+
+nav ul li a {
+  color: #D04710;
+
+
 }
 
 article {
+
     float: left;
-    padding: 80px;
-    width: 60%;
-    color: white;
+    padding: 75px;
+    width: 55%;
+    color: #E3F09E;
+    text-align: justify;
+    font-size:17px;
 }
 
 right_highlights {
     float: right;
     padding: 40px;
-    width: 20%;
+    width: 25%;
     color: white;
 }
 
@@ -62,8 +81,8 @@ section:after {
 
 /* Style the footer */
 footer {
-    background-image: url("blue_tech.jpg");
-    padding: 10px;
+    background-image: url("green_tech.jpg");
+    padding: 50px;
     text-align: center;
     color: white;
 }
