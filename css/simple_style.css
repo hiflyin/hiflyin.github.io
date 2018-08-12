@@ -3,8 +3,6 @@ x-sizing: border-box;
 }
 
 body {
-    /*background-image: url("blue_ai2.jpg") xx;
-    font-family: "Roboto", sans-serif;*/
     background: #252525;
     background-attachment: fixed /*!important;*/
     font-weight: normal;
@@ -19,7 +17,7 @@ header {
     height: 60px;
     width: 100%;
     position: fixed;
-    background-image: url("nav-bg.gif");
+    background-image: url("imgs/nav-bg.gif");
     border-bottom: 4px solid #434343;
     box-shadow: 0px 1px 3px rgba(0,0,0,.25);
     /*padding: 25px;*/
@@ -30,7 +28,7 @@ header {
 
 div.content {
     /*background-image: url("blue_ai3.jpg"); */
-    padding: 47px;
+    padding: 0px;
     font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -44,41 +42,43 @@ div.portrait {
 /* Create two columns/boxes that floats next to each other */
 nav {
     float: left;
-    width: 20%;
-    padding: 17px;
-    color: #48D64B;
-    font-size:16px;
+    width: 23%;
+    padding: 15px;
+    color: #686868;
+   /* text-shadow: 0px 1px 0px rgba(255,255,255,.5); /* 50% white from bottom */
+    font-size:14px;
     /*border-right: 4px solid #434343;*/
     box-shadow: 0px 1px 3px rgba(0,0,0,.25);
 }
 
 nav ul {
+    color: #bfbfbf;
     list-style-type: none;
+    text-shadow: none;
 }
 
 nav ul li a {
-  color: #D04710;
+  color: #80b3ff;
 }
 
 hr {
   border: 0;
   outline: none;
   height: 3px;
-  background: transparent url('hr.gif') center center repeat-x;
+  background: transparent url('imgs/hr.gif') center center repeat-x;
   margin: 0 0 20px;
 }
 
 article {
-
     float: left;
-    padding: 125px;
-    width: 55%;
+    padding: 145px;
+    width: 40%;
 }
 
 right_highlights {
     float: left;
     padding: 40px;
-    width: 25%;
+    width: 22%;
     color: white;
 }
 
@@ -98,7 +98,7 @@ section:after {
 
 /* Style the footer */
 footer {
-    background-image: url("green_tech.jpg");
+    background-image: url("imgs/green_tech.jpg");
     padding: 50px;
     text-align: center;
     color: white;
@@ -166,8 +166,8 @@ a small {
   display:block;
 }
 
-ul{
-  list-style-image:url('bullet.png');
+article > ul{
+  list-style-image:url('imgs/bullet.png');
 }
 
 strong {
