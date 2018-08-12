@@ -21,6 +21,8 @@ block concept is the plain RNN.
 Generic RNN layer in pure python
 The generic RNN in pure python is as follows:
 
+| xx | xx    |
+
 
 This 
 
