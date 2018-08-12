@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vanilla RNN python equations and code explained
+title: Vanilla LSTM python equations and code explained
 ---
 
 What is the article about?
@@ -20,14 +20,6 @@ block concept is the plain RNN.
 
 Generic RNN layer in pure python
 The generic RNN in pure python is as follows:
-
-
-
-
-
-
-
-
 
 
 This 
