@@ -21,7 +21,21 @@ block concept is the plain RNN.
 Generic RNN layer in pure python
 The generic RNN in pure python is as follows:
 
-| xx | xx    |
+| xx | xxxx    |
+
+
+> xxx
+
+```python
+def backprop_recursive_layer(inputs, outputs, errors, weights):
+    error = dot(errors["to_output"], weights["dense"].T) +
+        dot(errors["to_next_recursive"], weights["previous_recursive"])
+    total_delta = sigmoid_derivative(outputs) * error
+    return {"total_delta": total_delta,
+        "recursive_w_delta": dot(inputs["previous_recursive"].T, total_delta),
+        "input_w_delta": np.dot(inputs["input"].T, total_delta)}
+```
+
 
 
 This 
