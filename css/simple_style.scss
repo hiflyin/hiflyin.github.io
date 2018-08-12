@@ -1,10 +1,13 @@
+---
+---
+@import "_syntax-highlighting";
 *{
 x-sizing: border-box;
 }
 
 body {
     background: #252525;
-    background-attachment: fixed /*!important;*/
+    background-attachment: fixed;
     font-weight: normal;
     background: linear_gradient(#2a2a29, #1c1c1c);
 }
