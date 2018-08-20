@@ -1,0 +1,66 @@
+
+\documentclass{article}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=30mm,
+ right=30mm,
+ top=20mm,
+ }
+
+\usepackage{color}
+
+\begin{document}
+\color{white}
+
+\begin{equation}
+ P(y \; events  \; in \; one \; time unit)  = e^{-\lambda} \frac{ \lambda^y }{y!} 
+\end{equation}
+
+
+\begin{equation}
+ \hat{\lambda} = E(y|X)  = e^{\theta'X}
+\end{equation}
+
+
+\begin{equation}
+ P(y \; events  \; in \; one \; time unit)  = e^{-\hat{\lambda}} \frac{ \hat{\lambda}^y }{y!} = e^{-e^{\theta'X}} \frac{ e^{\theta'Xy} }{y!}
+\end{equation}
+
+
+\begin{equation}
+ P(y_1,..,y_N | x_1,..,x_N;\theta)  =  \prod_{i=1}^N  e^{-e^{\theta'x_i}} \frac{ e^{\theta'x_iy_i} }{y_i!} = L(\theta|Y,X)
+\end{equation}
+
+\begin{equation}
+ l(\theta|X,Y)  =  \sum_{i=1}^N (y_i \theta'  x_i -e^{\theta'x_i} - log(y_i))
+\end{equation}
+
+\begin{equation}
+ l(\theta|X,Y) = \sum_{i=1}^N (y_i \theta'  x_i -e^{\theta'x_i} )
+\end{equation}
+
+\begin{equation}
+P(y \; events  \; in \; p \; time units)  = e^{-p\lambda} \frac{ p\lambda^y }{y!} 
+\end{equation}
+
+where $\lambda$ is still the average claim rate \textbf{per time unit} we assumed (but we have just multiplied it by $p$), following a Poisson distribution and implying: $\hat{\lambda} = E(y|x)  = e^{\theta'X}$.
+
+So when replacing $\lambda$ in the eq. above with our estimate  $\hat{\lambda}$ based on the data $X$ we get:
+
+\begin{equation}
+ P(y \; events  \; in \; p \; time units)  = e^{-pe^{\theta^tX}} \frac{ {(pe^{\theta^tX})}^y }{y!} 
+\end{equation}
+
+\begin{equation}
+ l(\theta|X,Y)  =  \sum_{i=1}^N (y_i \theta'  x_i - p_ie^{\theta'x_i}  )
+\end{equation}
+
+\begin{equation}
+ l(\theta|X,Y)  =  \sum_{i=1}^N p_i (\frac{y_i}{p_i} \theta'  x_i -e^{\theta'x_i}  )
+\end{equation}
+
+\end{document}
+
