@@ -228,3 +228,8 @@ the agent learned to score 1 point in the game with a running average > .6 point
 
 Building a simple RL agent is a rather easy task. However it makes one understand the abstract components or building blocks 
 involved so that one can further optimize and add complexity to them individually.
+
+
+
+        
+___
