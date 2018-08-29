@@ -3,7 +3,7 @@ layout: post
 title: Vanilla LSTM architectures, equations, pure python code
 ---
 
-> Building on [Vanilla RNNs](/vanilla_RNN.html), LSTMs repesent a new milestone by proposing a mechanism 
+> Building on [Vanilla RNNs](/vanilla_RNN.html), LSTMs represent a new milestone by proposing a mechanism 
 of **separating** two tasks in a deep learning architecture: 1) predict for the current sample, and  2) memorize useful
  information for future samples. 
 
